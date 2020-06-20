@@ -1,13 +1,6 @@
-name: "COVID19 Bce"
+name: "juanchiem"
 navbar:
   title: "Inicio"
-  left:
-    - text: "COVID19 Status"
-      href: status_global.html
-    - text: "Proyecciones Balcarce"
-      href: proyecciones_balcarce.html
-    - text: "Sobre nosotros"
-      href: about_us.html
 output_dir: "."
 output:
   html_document:

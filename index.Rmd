@@ -1,28 +1,35 @@
 ---
+title: "Web personal "
+author:  "[Juan P. Edwards Molina](https://github.com/juanchiem) at [INTA](https://inta.gob.ar/balcarce)"
+output:
+  html_document:
+    fig_width: 1
 ---
 
 ```{r links varios, eval=FALSE, include=FALSE}
 https://jules32.github.io/rmarkdown-website-tutorial/basic_workflow.html
-https://github.com/lsaravia/covid19ar/blob/master/coronavirus.r 
-https://joachim-gassen.github.io/2020/03/tidying-the-new-johns-hopkins-covid-19-datasests/
-https://neherlab.org/covid19/
-https://andrecalerovaldez.shinyapps.io/CovidTimeSeries/
 ```
 
- <img src="images/vete3.jpeg" width="600px">
- 
-## ¿Qué es VETe?
- 
-El proyecto “Vigilancia Epidemiológica Territorial” (VETe), es una herramienta integral creada por la Facultad de Ciencias Agrarias de la Universidad Nacional de Mar del Plata, el INTA Balcarce, profesionales del Hospital Fossati, del municipio de Balcarce y de la UBA.  
+----
 
-El sistema VETe permite:
+<img src="images/juan.jpg" width="200" align="right"/>
 
-* detectar síntomas individuales de modo masivo para influir en la cadena de transmisión con el fin de disminuir o cortar el contagio social
-* identificar anticipadamente potenciales focos o conglomerados de infección en las localidades y pronosticar y analizar conductas individuales y sociales frente al aislamiento
-* monitorear y acompañar a las personas en cuarentena
-* generar alertas tempranas
-* predecir escenarios en la prestación de servicios públicos, no solo en el sistema de salud
-* tomar decisiones con datos, información respaldado en la ciencia y tecnología
-* colaborar con la intervención municipal
+<div style="text-align: left">  
 
-El sistema VETe ya está disponible tanto para municipios como otros niveles del Estado, empleando diversas herramientas, como encuestas autogestionadas, telefónicas, georreferenciones (GIS), modelización predictiva, monitoreo de casos, entre otras. 
+Ing. Agrónomo y M.Sc en producción vegetal (UNMdP). 
+<br>
+Doctor en Fitopatología (Universidad de San Pablo - Brasil).
+<br> Investigador en INTA Balcarce. 
+<br>
+La agronomía es mi gran hobbie (y profesión). Mi interés general es la epidemiología de enfermedades de cultivos extensivos, con particular atención en la cuantificación de su impacto sobre el rendimiento. A través de un enfoque global del sistema productivo, pretendo desarrollar estrategias de manejo de enfermedades con el menor impacto en el medio ambiente. </div>
+
+<br> [Google scholar](https://scholar.google.com/citations?user=RhjNQIsAAAAJ&hl=es) 
+<br> [Twitter](https://twitter.com/juanchiem) 
+
+----
+
+### Algunas notas e ideas sobre epidemiologia y manejo de enfermedades de cultivos
+
+**Junio 2020** 
+
+Fitopatometría y la necesidad de un consenso general [link](https://github.com/juanchiem/rmarkdown-website-tutorial)
