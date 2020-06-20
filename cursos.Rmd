@@ -1,0 +1,14 @@
+---
+---
+<br><br>
+
+<br> 
+
+<img src="images/tidyverse.jpg" width="200" align="right"/>
+<div style="text-align: left">  
+
+## [Exploración, manipulación y visualización de datos con tidyverse](https://juanchiem.github.io/R_Intro/)
+
+_Curso introductorio para uso de R en Agronomía y áreas afines _ </div>
+<br> 
+
