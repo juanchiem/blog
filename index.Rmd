@@ -1,6 +1,6 @@
 ---
 title: "Web personal "
-author:  "[Juan P. Edwards Molina](https://github.com/juanchiem) at [INTA](https://inta.gob.ar/balcarce)"
+author:  "[Juan P. Edwards Molina](https://github.com/juanchiem) / [INTA](https://inta.gob.ar/balcarce)"
 output:
   html_document:
     fig_width: 1
@@ -8,6 +8,7 @@ output:
 
 ```{r links varios, eval=FALSE, include=FALSE}
 https://jules32.github.io/rmarkdown-website-tutorial/basic_workflow.html
+https://everhartlab.github.io/IntroR/index.html 
 ```
 
 ----
@@ -32,4 +33,4 @@ La agronomía es mi gran hobbie (y profesión). Mi interés general es la epidem
 
 **Junio 2020** 
 
-Fitopatometría y la necesidad de un consenso general [link](https://github.com/juanchiem/notas/dis_press.html)
+Fitopatometría y la necesidad de un consenso general [link](https://juanchiem.github.io/blog/dis_press.html)
