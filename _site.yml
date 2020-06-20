@@ -9,3 +9,13 @@ output:
     css: _site.css
 #    include:
 #      after_body: _footer.html
+
+# Site settings
+title: Arjit Kapoor
+email: arjitkp@gmail.com
+description: To Learn Storytelling/To Understand Computational & Generative Creativity
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://arjitkp.github.io/" # the base hostname & protocol for your site
+twitter_username: juanchiem
+github_username:  juanchiem
+paginate: 5

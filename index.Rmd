@@ -28,8 +28,8 @@ La agronomía es mi gran hobbie (y profesión). Mi interés general es la epidem
 
 ----
 
-### Algunas notas e ideas sobre epidemiologia y manejo de enfermedades de cultivos
+### Algunas notas de opiniones personales sobre epidemiologia y manejo de enfermedades de cultivos
 
 **Junio 2020** 
 
-Fitopatometría y la necesidad de un consenso general [link](https://github.com/juanchiem/rmarkdown-website-tutorial)
+Fitopatometría y la necesidad de un consenso general [link](https://github.com/juanchiem/notas/dis_press.html)
