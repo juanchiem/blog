@@ -136,7 +136,7 @@ Por ej., para manchas foliares del trigo en Z32, un nivel bajo podria ser: <5% d
 
 En Z37, podriamos considerar la incidencia en estrato superior (HB, HB-1 y HB-2, 10 de cada una) y decir que hasta un 20% es baja presión de manchas.                     
 
-> La presión de enfermedad es clave para clasificar ensayos, discutir resultados, y guiar la toma de decisión. Para disminuir la subjetividad debemos minimizar la ambiguedad y establecer en que sección del canopeo estamos concentrando nuestra evalución.
+> La presión de enfermedad es clave para clasificar ensayos, discutir resultados, y guiar la toma de decisión. Además de la métrica utilizada, se requiere detalle del estrato de canopeo considerado.
 
 ## Conclusión 
 
