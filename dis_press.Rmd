@@ -1,5 +1,5 @@
 ---
-title: "Hacia un consenso sobre como cuantificar las enfermedades de cultivos "
+title: "Fitopatometría y la necesidad de un consenso general"
 author: "Juan Edwards Molina"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 ---
@@ -23,37 +23,43 @@ Supongamos el siguiente ejemplo:
 
 Es ampliamente aceptado que: 
 
-- A nivel de órgano (hoja, fruto, infloresencia, etc., para fines prácticos hablaremos de hojas en esta nota) la **severidad** es el _área de hoja ocupada por lesión de una enfermedad_. 
+A nivel de órgano (hoja, fruto, infloresencia, etc., para fines prácticos hablaremos de hojas en esta nota) la **severidad** es el _área de hoja ocupada por lesión de una enfermedad_. 
 
-A nivel de población de hojas (nivel de cultivo): la **incidencia** es el porcentaje (o proporción) de hojas con al menos una lesión de un total "n" de hojas evaluadas (I%), o sea: 
+A nivel de población de hojas (nivel de cultivo) la **incidencia** es el porcentaje (o proporción) de hojas con al menos una lesión de un total "n" de hojas evaluadas (I%), o sea: 
 
-$Incidencia = \frac{hj_e}{n} * 100$
+$Incidencia = \frac{hj_e}{n} * 100 = \frac{4}{10} * 100 = 40\%$
 
+La gran ventaja de la *incidencia* es que, al tratarse de una variable binaria (está enferma o no, 1 y 0 respectivamente), carece de subjetividad.
 
 La falta de consenso (o divergencia de adopción) ocurre cuando se habla severidad a nivel de población (o cultivo). 
 
-Según Madden¹, la *severidad media* se obtiene de calcular la media de las severidades individuales de todas las hojas evaluadas (incluyendo las sanas). La severidad media de solo las hojas infectadas, la llama *severidad condicional* ya que solo considera hojas enfermedas. 
+Según Madden¹, la *severidad* se obtiene de calcular el promedio de las severidades individuales de todas las hojas evaluadas (incluyendo las sanas), o sea una "severidad media general". Madden agrega el concepto de *severidad condicional* para la severidad media de solo aquellas hojas enfermas. 
 
-En Argentina, existe vriabilidad en la términologia: además de severidad e incidencia es comun oir/leer *intensidad*, *severidad en sentido estricto* (severidad de solo hojas enfermas) y *severidad en sentido amplio* (severidad de todas las hojas evaluadas).
+En Argentina, existe vriabilidad en la términologia: además de severidad e incidencia es comun oir/leer *intensidad*, *severidad en sentido estricto* (severidad de solo hojas enfermas) y *severidad en sentido amplio* (severidad de todas las hojas evaluadas). Esta amplitud de terminologia conduce a inconsistencias en la comunicación.
 
-Retomemos el ejemplo expuesto anteriormente. 
-
-La incidencia es fácil de obtener y justamente su gran ventaja es que carece de subjetividad: 
-
-$Incidencia = \frac{4}{10} * 100 = 40\%$
-
-Para estimar la severidad (S%) adoptaremos la "severidad en sentido estricto" (o bien, la "severidad condicional" de Madden 2007), es decir promediamos la severidad de solo hojas enfermas: 
+Arbitrariamente, calcularemos la severidad (S%) promediando la severidad de solo hojas enfermas  ("severidad en sentido estricto" o bien, la "severidad condicional" de Madden 2007):
 
 $Severidad = promedio(10,1,5,7) = 5,75\%$ 
 
-Si quisiéramos establecer la "cantidad total" de enfermedad presente en nuestro cultivo, sin dudas debemos complementar la incidencia con la severidad (ambas expresadas en proporcion para obtener un valor de intensidad entre 0-100). Calculamos asi la **intensidad** (o bien la "severidad en sentido amplio", o la "severidad media")
+Si quisiéramos establecer la "cantidad total" de enfermedad presente en nuestro cultivo, sin dudas debemos complementar la incidencia con la severidad (ambas expresadas en proporcion para obtener un valor de intensidad entre 0-100). Calculamos asi la **intensidad** (o bien la "severidad en sentido amplio", o la "severidad" según Madden)
 
 $Intensidad = I * S = (40/100 * 5,75/100)*100 = 2,3 \%$
 
 _(Claramente se podrian simplificar los calculos pero para fines didacticos lo hacemos por extenso)_
 
+> En Argentina podriamos establecer: incidencia, severidad (solo hojas enfermas) e intensidad para estimar la enfermedad presente y compartir nuestros resultados
 
-Considerar los conceptos de incidencia, severidad e intensidad podria resultar ventajoso ya que puede aportar información acerca de la distribución de la enfermedad en el cultivo: 
+## Misma intensidad, diferente distribución de la enfermedad
+
+Siempre que cuantifiquemos la/s enfermedad/es presentes en un cultivo debemos ser detallistas en la informacion, ya que mismos niveles de enfermedades pueden representar diferentes situaciones a nivel de planta individual o de lote. Esto puede llevar a inconsistencias en la toma de decision como uso de umbrales para aplicación de fungicidas.
+
+Un punto fundamental, es detallar sobre que porción del canopeo estamos haciendo la estimación, ya que una misma severidad por planta puede tener diferente distribución en el perfil del canopeo, con la potencial diferencia sobre el rendimiento.   
+
+![](https://docs.google.com/drawings/d/e/2PACX-1vSESR-P4u_Gm_j-GxhTwy7R9GUEmBFLIgGATxjOkH_U39ScMT30e5UR_FfaNomyZ5ZxVKsUnn9Fz1SS/pub?w=635&h=306)
+
+En este caso, la planta de soja de la izquierda tiene una disitribución "piramidal" de los síntomas, en cambio la planta de la derecha es mas uniforme en el perfil, lo que representaria un escenario mas conducente a pérdidas de rendimiento.  
+
+A nivel de lote la insuficiencia de información nos puede llevar a otro "enmascaramiento" de lo que tenemos. Considerar los conceptos de incidencia, severidad e intensidad podria resultar ventajoso ya que puede aportar información acerca de la distribución de la enfermedad en el cultivo. Veamos un nuevo ejemplo.
 
 ```{r}
 dat <- tibble(expand.grid(severidad = seq(1, 100, 1), 
@@ -81,88 +87,60 @@ dat %>% #filter(incidencia<50 | severidad<50) %>%
   geom_text(data = data.frame(severidad = c(80,20), incidencia=c(20,80), intensidad=NA, lab=c("A", "B")),  aes(label=lab, vjust = 0, hjust = -0.5))
 ```
 
-En este ejemplo ficticio, A (20%I/80%S) y B (80%I/20%S) tienen exactamente la misma intensidad (16%) sin embarrgo representan dos situaciones completamente diferentes a nivel de lote: **A** podria deberse a una enfermedad iniciada en focos (roya estriada o amarilla) y **B** podria representar una enfermedad que se presente en forma generalizada (roya de la hoja o anaranjada)  
-
-Habiendo estalecido las bases conceptuales de las metricas de cuantificación podemos pasar a otro punto fundamental que es establecer qué **presión de enfermedad** tiene un cultivo determinado, información clave para caracterizar años, localidades, situaciones de manejo, y fundamentalmente ensayos.
-
-### Estableciendo la presión de enfermedad de un cultivo
-
-Un punto fundamental, es detallar sobre que porción del canopeo estamos haciendo la estimación, ya que una misma severidad por planta puede tener diferente distribución en el perfil del canopeo, con la potencial diferencia sobre el rendimiento.   
-
-![](https://docs.google.com/drawings/d/e/2PACX-1vSESR-P4u_Gm_j-GxhTwy7R9GUEmBFLIgGATxjOkH_U39ScMT30e5UR_FfaNomyZ5ZxVKsUnn9Fz1SS/pub?w=635&h=306)
+Aqui, A (20%I/80%S) y B (80%I/20%S) tienen exactamente la misma intensidad (16%) sin embarrgo representan dos situaciones completamente diferentes a nivel de lote: **A** podria deberse a una enfermedad iniciada en focos (roya estriada o amarilla) y **B** podria representar una enfermedad que se presente en forma generalizada (roya de la hoja o anaranjada)  
 
 En el caso del cultivo de trigo, es conocido que las mayor contribución al rendimiento es aportado por la hoja bandera (HB), luego HB-1, y HB-2. Por esto mismo es podria establecerse estas 3 hojas como target de muestreo. 
 
+> Un mismo nivel de enfermedad puede representar situaciones diferentes, a nivel de planta y de cultivo
 
-**Manchas foliares**
+Habiendo estalecido las bases conceptuales de las métricas de cuantificación podemos pasar a otro punto fundamental que es establecer qué **presión de enfermedad** tiene un cultivo determinado, información clave para caracterizar años, localidades, situaciones de manejo, y fundamentalmente ensayos.
 
-Valores máximos de incidencia pueden rondar en 60% y severidad en 30%
+### Estableciendo la presión de enfermedad de un cultivo
 
-Podria establecerse como umbrales de presión, según nivel de intensidad: 
+La presión de enfermedad de una situación particular (ensayo, lote, región) es el marco fundamental para contextualizar una conversación de sanidad de cultivos. Curiosamente, escasean las fuentes de consultas sobre ello en Argentina. 
 
-* Baja: <5% 
-* Media: 5 a 10%
-* Alta: >10%
+Su establecimiento requiere de gran consenso de los especialistas de cada patosistema y podria variar entre regiones para fines epidemiologicos. O sea, un 7% de intensidad de manchas foliares en el estrato inferior de un trigo puede representar una gran amenaza para el rendimiento en una región cálida y húmeda o algo poco riesgoso en una región mas fría. Estudios especificos deberían ser realizados ""in situ"" para establecer medidas de manejo como determinación de umbrales de decisión. De nada sirve extrapolar recomendaciones entre regiones agroecológicas diferentes.   
 
-(Grafico reactivo: puede cliquear sobre el área del grafico para ver los valores)
+Veamos la relación directa entre incidencia, severidad e intensidad en el siguiente gráfico reactivo (puede cliquear sobre el área del gráfico para ver los valores de incidencia, severidad e intensidad)
 
-```{r}
-brks_manchas <- c(5, 10, 15, 20, 25)
-# library(scales)
-p_manchas <- 
-  dat %>% filter(incidencia<50 | severidad<50) %>% 
-  ggplot(aes(incidencia, severidad, z = intensidad)) + 
-  geom_tile(aes(fill = intensidad)) +
-  geom_contour(aes(z = intensidad), breaks = brks_manchas, colour = "grey90")+ # bins = 5
-  scale_fill_distiller(palette = "Spectral", direction = -1, 
-                       limits = c(-5, 30)) +
-  xlim(0,50)+ ylim(0,50)+
-  # geom_vline(xintercept = c(20, 40), linetype=2, alpha=0.2)+
-  # geom_hline(yintercept = c(20, 40), linetype=2, alpha=0.2)+
-  labs(x="Incidencia", y = "Severidad", 
-       title= "Intensidad de manchas(%)",
-       subtitle = "Intensidad = incidencia * severidad")+
-  geom_text(data = data.frame(severidad = seq(10, 40, 10), 
-                              incidencia=c(48), 
-                              intensidad=NA, lab=paste(seq(5,20,5), "%")), 
-            aes(label=lab, vjust = 0, hjust = 0), angle = -25) +
-  theme_bw() %+replace% theme(legend.position = "none")
-withr::with_options(list(digits = 1), ggplotly(p_manchas))
-```
-
-**Royas** 
-
-Es comun observar mayores niveles de incidencia que en mancha (hasta 100%). 
-
-Podria establecerse como umbrales de presión, según nivel de intensidad: 
-
-* Baja: <5% 
-* Media: 5 a 10%
-* Alta: >10%
 
 ```{r}
 # library(scales)
-brks_royas <- seq(10,100,10)
-p_royas <- 
+brks <- seq(5, 100,5)
+p <- 
   dat %>% 
   ggplot(aes(incidencia, severidad, z = intensidad)) + 
   geom_tile(aes(fill = intensidad)) +
-  geom_contour(aes(z = intensidad), breaks = brks_royas, colour = "grey90")+ # bins = 5
+  geom_contour(aes(z = intensidad), breaks = brks, colour = "grey90")+ # bins = 5
   scale_fill_distiller(palette = "Spectral", direction = -1, 
                        limits = c(-10, 100)) +
   # geom_vline(xintercept = c(20, 40), linetype=2, alpha=0.2)+
   # geom_hline(yintercept = c(20, 40), linetype=2, alpha=0.2)+
   labs(x="Incidencia", y = "Severidad", 
-       title= "Intensidad de roya (%)",
+       title= "Intensidad (%), según incidencia y severidad",
        subtitle = "Intensidad = incidencia * severidad")+
-  geom_text(data = data.frame(severidad = seq(10, 100, 10), 
-                              incidencia=c(95), 
-                              intensidad=NA, lab=paste(seq(10,100,10), "%")), 
-            aes(label=lab, vjust = 0, hjust = 0), angle = -25) +
+  scale_x_continuous(breaks = seq(0,100,10))+
+  scale_y_continuous(breaks = seq(0,100,10))+
+  # geom_text(data = data.frame(severidad = seq(10, 100, 10), 
+  #                             incidencia=c(95), 
+  #                             intensidad=NA, lab=paste(seq(10,100,10), "%")), 
+  #           aes(label=lab, vjust = 0, hjust = 0), angle = -25) +
   theme_bw() %+replace% theme(legend.position = "none")
 
-withr::with_options(list(digits = 2), ggplotly(p_royas))
+withr::with_options(list(digits = 2), ggplotly(p))
 ```
+
+En base a esta información podria establecerse zonas de baja, moderada y alta presión de enfermedades, indicando a su vez: **momento fenológico del cultivo** y **estrato del canopeo de evaluación**. 
+
+Por ej., para manchas foliares del trigo en Z32, un nivel bajo podria ser: <5% de intensidad general (considerando todas las hojas presentes). 
+
+En Z37, podriamos considerar la incidencia en estrato superior (HB, HB-1 y HB-2, 10 de cada una) y decir que hasta un 20% es baja presión de manchas.                     
+
+> La presión de enfermedad es clave para clasificar ensayos, discutir resultados, y guiar la toma de decisión. Para disminuir la subjetividad debemos minimizar la ambiguedad y establecer en que sección del canopeo estamos concentrando nuestra evalución.
+
+## Conclusión 
+
+**Nada** es absoluto en biología, pero cuanto mas nos pongamos de acuerdo, menor será el nivel de incertidumbre en nestro día a día como cuantificadores de enfermedades. **Todo** lo escrito en este articulo es discutible y son bienvenidos los comentarios. Notese que se discutió la cuantificación de enfermedades foliares en general. Otro articulo merecen las enfermedades sistémicas y el uso adecuado de las diferentes métricas de evaluación de enfermedades.  
 
 ---
 
