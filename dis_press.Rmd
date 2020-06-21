@@ -35,31 +35,31 @@ La falta de consenso (o divergencia de adopción) ocurre cuando se habla severid
 
 Según Madden¹, la *severidad* se obtiene de calcular el promedio de las severidades individuales de todas las hojas evaluadas (incluyendo las sanas), o sea una "severidad media general". Madden agrega el concepto de *severidad condicional* para la severidad media de solo aquellas hojas enfermas. 
 
-En Argentina, existe variabilidad en la términologia: además de severidad e incidencia es comun oir/leer *intensidad*, *severidad en sentido estricto* (severidad de solo hojas enfermas) y *severidad en sentido amplio* (severidad de todas las hojas evaluadas). Esta amplitud de terminologia conduce a inconsistencias en la comunicación.
+En Argentina, existe variabilidad en la términologia: además de severidad e incidencia es común oir/leer *intensidad*, *severidad en sentido estricto* (severidad de sólo hojas enfermas) y *severidad en sentido amplio* (severidad de todas las hojas evaluadas). Esta amplitud de terminología conduce a inconsistencias en la comunicación.
 
 Arbitrariamente, calcularemos la severidad (S%) promediando la severidad de solo hojas enfermas  ("severidad en sentido estricto" o bien, la "severidad condicional" de Madden 2007):
 
 $Severidad = promedio(10,1,5,7) = 5,75\%$ 
 
-Si quisiéramos establecer la "cantidad total" de enfermedad presente en nuestro cultivo, sin dudas debemos complementar la incidencia con la severidad (ambas expresadas en proporcion para obtener un valor de intensidad entre 0-100). Calculamos asi la **intensidad** (o bien la "severidad en sentido amplio", o la "severidad" según Madden)
+Si quisiéramos establecer la "cantidad total" de enfermedad presente en nuestro cultivo, sin dudas debemos complementar la incidencia con la severidad (ambas expresadas en proporción para obtener un valor de intensidad entre 0-100). Calculamos así la **intensidad** (o bien la "severidad en sentido amplio", o la "severidad" según Madden)
 
 $Intensidad = I * S = (40/100 * 5,75/100)*100 = 2,3 \%$
 
-_(Claramente se podrian simplificar los calculos pero para fines didacticos lo hacemos por extenso)_
+_(Claramente se podría simplificar los cálculos, pero para fines didácticos, lo hacemos por extenso)_
 
-> En Argentina podriamos establecer: incidencia, severidad (solo hojas enfermas) e intensidad para estimar la enfermedad presente y compartir nuestros resultados
+> En Argentina podríamos establecer: incidencia, severidad (solo hojas enfermas) e intensidad para estimar la enfermedad presente y compartir nuestros resultados
 
 ## Misma intensidad, diferente distribución de la enfermedad
 
-Siempre que cuantifiquemos la/s enfermedad/es presentes en un cultivo debemos ser detallistas en la informacion, ya que mismos niveles de enfermedades pueden representar diferentes situaciones a nivel de planta individual o de lote. Esto puede llevar a inconsistencias en la toma de decisión como uso de umbrales para aplicación de fungicidas, por ejemplo.
+Siempre que cuantifiquemos la/s enfermedad/es presentes en un cultivo debemos ser detallistas en la información, ya que mismos niveles de enfermedades pueden representar diferentes situaciones a nivel de planta individual o de lote. Esto puede llevar a inconsistencias en la toma de decisión como uso de umbrales para aplicación de fungicidas, por ejemplo.
 
 Un punto fundamental, es detallar sobre que porción del canopeo estamos haciendo la estimación, ya que una misma severidad por planta puede tener diferente distribución en el perfil del canopeo, con la potencial diferencia sobre el rendimiento.   
 
 ![](https://docs.google.com/drawings/d/e/2PACX-1vSESR-P4u_Gm_j-GxhTwy7R9GUEmBFLIgGATxjOkH_U39ScMT30e5UR_FfaNomyZ5ZxVKsUnn9Fz1SS/pub?w=635&h=306)
 
-En este caso, la planta de soja de la izquierda tiene una disitribución "piramidal" de los síntomas, en cambio la planta de la derecha es más uniforme en el perfil, lo que representaria un escenario mas conducente a pérdidas de rendimiento.  
+En este caso, la planta de soja de la izquierda tiene una disitribución "piramidal" de los síntomas, en cambio la planta de la derecha es más uniforme en el perfil, lo que representaría un escenario mas conducente a pérdidas de rendimiento.  
 
-A nivel de lote la insuficiencia de información nos puede llevar a otro "enmascaramiento" de lo que tenemos. Considerar los conceptos de incidencia, severidad e intensidad podria resultar ventajoso ya que puede aportar información acerca de la distribución de la enfermedad en el cultivo. Veamos un nuevo ejemplo.
+A nivel de lote la insuficiencia de información nos puede llevar a otro "enmascaramiento" de lo que realmente ocurre en el campo. Considerar los conceptos de incidencia, severidad e intensidad podría resultar ventajoso ya que aportaría información acerca de la distribución de la enfermedad en el cultivo. Veamos un nuevo ejemplo.
 
 ```{r}
 dat <- tibble(expand.grid(severidad = seq(1, 100, 1), 
@@ -87,19 +87,19 @@ dat %>% #filter(incidencia<50 | severidad<50) %>%
   geom_text(data = data.frame(severidad = c(80,20), incidencia=c(20,80), intensidad=NA, lab=c("A", "B")),  aes(label=lab, vjust = 0, hjust = -0.5))
 ```
 
-Aqui, A (20%I/80%S) y B (80%I/20%S) tienen exactamente la misma intensidad (16%) sin embarrgo representan dos situaciones completamente diferentes a nivel de lote: **A** podria deberse a una enfermedad iniciada en focos (roya estriada o amarilla) y **B** podria representar una enfermedad que se presente en forma generalizada (roya de la hoja o anaranjada)  
+Aqui, A (20%I/80%S) y B (80%I/20%S) tienen exactamente la misma intensidad (16%) sin embargo representan dos situaciones completamente diferentes a nivel de lote: **A** podría deberse a una enfermedad iniciada en focos (roya estriada o amarilla del trigo) y **B** podria representar una enfermedad que se presenta en forma generalizada (roya de la hoja o anaranjada del trigo)  
 
-En el caso del cultivo de trigo, es conocido que las mayor contribución al rendimiento es aportado por la hoja bandera (HB), luego HB-1, y HB-2. Por esto mismo es podria establecerse estas 3 hojas como target de muestreo. 
+Continuando con el cultivo de trigo, es conocido que las mayor contribución al rendimiento es aportado por la hoja bandera (HB), luego HB-1, y HB-2. Por esto mismo podria establecerse estas 3 hojas como target de muestreo. 
 
 > Un mismo nivel de enfermedad puede representar situaciones diferentes, a nivel de planta y de cultivo
 
-Habiendo estalecido las bases conceptuales de las métricas de cuantificación podemos pasar a otro punto fundamental que es establecer qué **presión de enfermedad** tiene un cultivo determinado, información clave para caracterizar años, localidades, situaciones de manejo, y fundamentalmente ensayos.
+Habiendo establecido las bases conceptuales de las métricas de cuantificación podemos pasar a otro punto fundamental que es establecer qué **presión de enfermedad** tiene un cultivo determinado, información clave para caracterizar años, localidades, situaciones de manejo, y fundamentalmente ensayos.
 
 ### Estableciendo la presión de enfermedad de un cultivo
 
 La presión de enfermedad de una situación particular (ensayo, lote, región) es el marco fundamental para contextualizar una conversación de sanidad de cultivos. Curiosamente, escasean las fuentes de consultas sobre ello en Argentina. 
 
-Su establecimiento requiere de gran consenso de los especialistas de cada patosistema y podria variar entre regiones para fines epidemiologicos. O sea, un 7% de intensidad de manchas foliares en el estrato inferior de un trigo puede representar una gran amenaza para el rendimiento en una región cálida y húmeda o algo poco riesgoso en una región mas fría. Estudios especificos deberían ser realizados "*in situ*" para establecer medidas de manejo como determinación de umbrales de decisión. De nada sirve extrapolar recomendaciones entre regiones agroecológicamente diferentes.   
+Su establecimiento requiere de gran consenso de los especialistas de cada patosistema y podría variar entre regiones para fines epidemiológicos. O sea, un 7% de intensidad de manchas foliares en el estrato inferior de un trigo puede representar una gran amenaza para el rendimiento en una región cálida y húmeda, y en contraparte, algo poco riesgoso en una región mas fría. Estudios especificos deberían ser realizados "*in situ*" para establecer medidas de manejo como determinación de umbrales de decisión. De nada sirve extrapolar recomendaciones entre regiones agroecológicamente diferentes.   
 
 Veamos la relación directa entre incidencia, severidad e intensidad en el siguiente gráfico reactivo (puede cliquear sobre el área del gráfico para ver los valores de incidencia, severidad e intensidad)
 
@@ -140,7 +140,7 @@ En Z37, podriamos considerar la incidencia en estrato superior (HB, HB-1 y HB-2,
 
 ## Conclusión 
 
-**Nada** es absoluto en biología, pero cuanto mas nos pongamos de acuerdo, menor será el nivel de incertidumbre en nestro día a día como cuantificadores de enfermedades. **Todo** lo escrito en este articulo es discutible y son bienvenidos los comentarios. Notese que se discutió la cuantificación de enfermedades foliares en general. Otro articulo merecen las enfermedades sistémicas y el uso adecuado de las diferentes métricas de evaluación de enfermedades (indice de enfermedad, área abajo de la curva del progreso de la enfermedad, etc..  
+**Nada** es absoluto en biología, pero cuanto mas nos pongamos de acuerdo, menor será el nivel de incertidumbre en nestro día a día como cuantificadores de enfermedades. **Todo** lo escrito en este articulo es discutible y son bienvenidos los comentarios. Notese que se discutió la cuantificación de enfermedades foliares en general. Otro articulo merecen las enfermedades sistémicas y el uso adecuado de las diferentes métricas de evaluación de enfermedades (indice de enfermedad, área abajo de la curva del progreso de la enfermedad, etc.) 
 
 ---
 
