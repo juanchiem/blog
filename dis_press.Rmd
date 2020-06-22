@@ -23,7 +23,7 @@ Supongamos el siguiente ejemplo:
 
 Es ampliamente aceptado que: 
 
-A nivel de órgano (hoja, fruto, infloresencia, etc., para fines prácticos hablaremos de hojas en esta nota) la **severidad** es el _área de hoja ocupada por lesión de una enfermedad_. 
+A nivel de órgano (hoja, fruto, inflorescencia, etc., para fines prácticos hablaremos de hojas en esta nota) la **severidad** es el _área de hoja ocupada por lesión de una enfermedad_. 
 
 A nivel de población de hojas (nivel de cultivo) la **incidencia** es el porcentaje (o proporción) de hojas con al menos una lesión de un total "n" de hojas evaluadas (I%), o sea: 
 
@@ -35,7 +35,7 @@ La falta de consenso (o divergencia de adopción) ocurre cuando se habla severid
 
 Según Madden¹, la *severidad* se obtiene de calcular el promedio de las severidades individuales de todas las hojas evaluadas (incluyendo las sanas), o sea una "severidad media general". Madden agrega el concepto de *severidad condicional* para la severidad media de solo aquellas hojas enfermas. 
 
-En Argentina, existe variabilidad en la términologia: además de severidad e incidencia es común oir/leer *intensidad*, *severidad en sentido estricto* (severidad de sólo hojas enfermas) y *severidad en sentido amplio* (severidad de todas las hojas evaluadas). Esta amplitud de terminología conduce a inconsistencias en la comunicación.
+En Argentina, existe variabilidad en la terminología: además de severidad e incidencia es común oír/leer *intensidad*, *severidad en sentido estricto* (severidad de sólo hojas enfermas) y *severidad en sentido amplio* (severidad de todas las hojas evaluadas). Esta amplitud de terminología conduce a inconsistencias en la comunicación.
 
 Arbitrariamente, calcularemos la severidad (S%) promediando la severidad de solo hojas enfermas  ("severidad en sentido estricto" o bien, la "severidad condicional" de Madden 2007):
 
@@ -57,7 +57,7 @@ Un punto fundamental, es detallar sobre que porción del canopeo estamos haciend
 
 ![](https://docs.google.com/drawings/d/e/2PACX-1vSESR-P4u_Gm_j-GxhTwy7R9GUEmBFLIgGATxjOkH_U39ScMT30e5UR_FfaNomyZ5ZxVKsUnn9Fz1SS/pub?w=635&h=306)
 
-En este caso, la planta de soja de la izquierda tiene una disitribución "piramidal" de los síntomas, en cambio la planta de la derecha es más uniforme en el perfil, lo que representaría un escenario mas conducente a pérdidas de rendimiento.  
+En este caso, la planta de soja de la izquierda tiene una distribución "piramidal" de los síntomas, en cambio la planta de la derecha es más uniforme en el perfil, lo que representaría un escenario mas conducente a pérdidas de rendimiento.  
 
 A nivel de lote la insuficiencia de información nos puede llevar a otro "enmascaramiento" de lo que realmente ocurre en el campo. Considerar los conceptos de incidencia, severidad e intensidad podría resultar ventajoso ya que aportaría información acerca de la distribución de la enfermedad en el cultivo. Veamos un nuevo ejemplo.
 
@@ -87,9 +87,9 @@ dat %>% #filter(incidencia<50 | severidad<50) %>%
   geom_text(data = data.frame(severidad = c(80,20), incidencia=c(20,80), intensidad=NA, lab=c("A", "B")),  aes(label=lab, vjust = 0, hjust = -0.5))
 ```
 
-Aqui, A (20%I/80%S) y B (80%I/20%S) tienen exactamente la misma intensidad (16%) sin embargo representan dos situaciones completamente diferentes a nivel de lote: **A** podría deberse a una enfermedad iniciada en focos (roya estriada o amarilla del trigo) y **B** podria representar una enfermedad que se presenta en forma generalizada (roya de la hoja o anaranjada del trigo)  
+Aquí, A (20%I/80%S) y B (80%I/20%S) tienen exactamente la misma intensidad (16%) sin embargo representan dos situaciones completamente diferentes a nivel de lote: **A** podría deberse a una enfermedad iniciada en focos (roya estriada o amarilla del trigo) y **B** podría representar una enfermedad que se presenta en forma generalizada (roya de la hoja o anaranjada del trigo)  
 
-Continuando con el cultivo de trigo, es conocido que las mayor contribución al rendimiento es aportado por la hoja bandera (HB), luego HB-1, y HB-2. Por esto mismo podria establecerse estas 3 hojas como target de muestreo. 
+Continuando con el cultivo de trigo, es conocido que las mayor contribución al rendimiento es aportado por la hoja bandera (HB), luego HB-1, y HB-2. Por esto mismo podría establecerse estas 3 hojas como target de muestreo. 
 
 > Un mismo nivel de enfermedad puede representar situaciones diferentes, a nivel de planta y de cultivo
 
@@ -99,7 +99,7 @@ Habiendo establecido las bases conceptuales de las métricas de cuantificación 
 
 La presión de enfermedad de una situación particular (ensayo, lote, región) es el marco fundamental para contextualizar una conversación de sanidad de cultivos. Curiosamente, escasean las fuentes de consultas sobre ello en Argentina. 
 
-Su establecimiento requiere de gran consenso de los especialistas de cada patosistema y podría variar entre regiones para fines epidemiológicos. O sea, un 7% de intensidad de manchas foliares en el estrato inferior de un trigo puede representar una gran amenaza para el rendimiento en una región cálida y húmeda, y en contraparte, algo poco riesgoso en una región mas fría. Estudios especificos deberían ser realizados "*in situ*" para establecer medidas de manejo como determinación de umbrales de decisión. De nada sirve extrapolar recomendaciones entre regiones agroecológicamente diferentes.   
+Su establecimiento requiere de gran consenso de los especialistas de cada patosistema y podría variar entre regiones para fines epidemiológicos. O sea, un 7% de intensidad de manchas foliares en el estrato inferior de un trigo puede representar una gran amenaza para el rendimiento en una región cálida y húmeda, y en contraparte, algo poco riesgoso en una región mas fría. Estudios específicos deberían ser realizados "*in situ*" para establecer medidas de manejo como determinación de umbrales de decisión. De nada sirve extrapolar recomendaciones entre regiones agroecológicamente diferentes.   
 
 Veamos la relación directa entre incidencia, severidad e intensidad en el siguiente gráfico reactivo (puede cliquear sobre el área del gráfico para ver los valores de incidencia, severidad e intensidad)
 
@@ -130,18 +130,18 @@ p <-
 withr::with_options(list(digits = 2), ggplotly(p))
 ```
 
-En base a esta información podrian establecerse zonas de baja, moderada y alta presión de enfermedades, indicando a su vez: **momento fenológico del cultivo** y **estrato del canopeo de evaluación**. 
+En base a esta información podrían establecerse zonas de baja, moderada y alta presión de enfermedades, indicando a su vez: **momento fenológico del cultivo** y **estrato del canopeo de evaluación**. 
 
-Por ej., para manchas foliares del trigo en Z32, un nivel bajo podria ser: <5% de intensidad general (considerando todas las hojas presentes). 
+Por ej., para manchas foliares del trigo en Z32, un nivel bajo podría ser: <5% de intensidad general (considerando todas las hojas presentes). 
 
-En Z37, podriamos considerar la incidencia en estrato superior (HB, HB-1 y HB-2, 10 de cada una) y decir que hasta un 20% es baja presión de manchas.                     
+En Z37, podríamos considerar la incidencia en estrato superior (HB, HB-1 y HB-2, 10 de cada una) y decir que hasta un 20% es baja presión de manchas.                     
 
 > La presión de enfermedad es clave para clasificar ensayos, discutir resultados, y guiar la toma de decisión. Además de la métrica utilizada, se requiere detalle del estrato de canopeo considerado.
 
 ## Conclusión 
 
-**Nada** es absoluto en biología, pero cuanto mas nos pongamos de acuerdo, menor será el nivel de incertidumbre en nestro día a día como cuantificadores de enfermedades. **Todo** lo escrito en este articulo es discutible y son bienvenidos los comentarios. Notese que se discutió la cuantificación de enfermedades foliares en general. Otro articulo merecen las enfermedades sistémicas y el uso adecuado de las diferentes métricas de evaluación de enfermedades (indice de enfermedad, área abajo de la curva del progreso de la enfermedad, etc.) 
+**Nada** es absoluto en biología, pero cuanto mas nos pongamos de acuerdo, menor será el nivel de incertidumbre en nuestro día a día como cuantificadores de enfermedades. **Todo** lo escrito en este artículo es discutible y son bienvenidos los comentarios. Nótese que se discutió la cuantificación de enfermedades foliares en general. Otro articulo merecen las enfermedades sistémicas y el uso adecuado de las diferentes métricas de evaluación de enfermedades (índice de enfermedad, área abajo de la curva del progreso de la enfermedad, enfermedades que inducen defoliación, etc.) 
 
 ---
 
-¹Study of plant disease epidemics (2007), cap 2, pag 12 
+¹Study of plant disease epidemics (2007), cap 2, pág 12 
