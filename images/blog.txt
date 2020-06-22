@@ -1,0 +1,28 @@
+ Soy ingeniero agrónomo apasionado por la epidemiología de enfermedades de cultivos. Soy fitopatólogo de formación pero todo lo quiero llevar a números.
+ 
+ 
+ bio: Soy ingeniero agrónomo apasionado por la epidemiología de enfermedades de cultivos. Soy fitopatólogo de formación pero todo lo quiero llevar a números. Si una enfermedad no tiene potencial daño sobre un cultivo, no 
+
+education:
+  courses:
+  - course: PhD en Fitopatología
+    institution: Universidad de São Paulo (USP) - ESALQ
+    year: 2017
+  - course: MSc en Producción Vegetal 
+    institution: Universidad Nacional de Mar del Plata (UNMdP) - Fac. Cs. Agrarias
+    year: 2013
+  - course: Ingeniero Agrónomo
+    institution: Universidad Nacional de Mar del Plata (UNMdP) - Fac. Cs. Agrarias
+    year: 2007
+email: "edwardsmolina@gmail.com"
+interests:
+- Agronomía
+- Fitopatología
+- Epidemiologia
+- Estimación de daño
+- Protección de cultivos
+- Agroecología
+organizations:
+- name: INTA
+  url: ""
+role: Investigador 

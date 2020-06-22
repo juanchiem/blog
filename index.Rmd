@@ -1,6 +1,6 @@
 ---
 title: "Web personal "
-author:  "[Juan P. Edwards Molina](https://github.com/juanchiem) / [INTA](https://inta.gob.ar/balcarce)"
+author:  "Juan P. Edwards Molina / Investigador en [INTA Balcarce](https://inta.gob.ar/balcarce)"
 output:
   html_document:
     fig_width: 1
@@ -16,23 +16,26 @@ https://everhartlab.github.io/IntroR/index.html
 <img src="images/juan.jpg" width="200" align="right"/>
 
 <div style="text-align: left">  
-
-Ing. Agrónomo y M.Sc en producción vegetal (UNMdP). 
-<br>
-Doctor en Fitopatología (Universidad de San Pablo - Brasil).
-<br> Investigador en INTA Balcarce. 
-<br>
-La agronomía es mi gran hobbie (y profesión). Mi interés general es la epidemiología de enfermedades de cultivos extensivos, con particular atención en la cuantificación de su impacto sobre el rendimiento. A través de un enfoque global del sistema productivo, pretendo desarrollar estrategias de manejo de enfermedades con el menor impacto en el medio ambiente. </div>
+Ing. Agrónomo y M.Sc en Producción Vegetal (Univ. Nac. de Mar del Plata)
+<br> 
+Doctor en Fitopatología (Universidad de San Pablo - Brasil)
+<br> 
+La agronomía es mi gran hobbie y profesión. Mi interés general es la <br> epidemiología de enfermedades de cultivos extensivos, con particular atención en la cuantificación de su impacto sobre el rendimiento. A través de un enfoque global del sistema productivo, pretendo desarrollar estrategias de manejo de enfermedades con el menor impacto en el medio ambiente 
 
 <br> [Google scholar](https://scholar.google.com/citations?user=RhjNQIsAAAAJ&hl=es) 
 <br> [Twitter](https://twitter.com/juanchiem) 
 <br> edwardsmolina@gmail.com
-<br> 
+
+</div>
 
 ----
 
-### Notas de opinión personal sobre epidemiología y manejo de enfermedades de cultivos
+### Notas de opinión personal sobre epidemiología y manejo de enfermedades de cultivos agrícolas
 
+<img src="images/ciclo.jpg" width="200" align="right"/>
+<div style="text-align: left">  
 **Junio 2020** 
 
 Fitopatometría y la necesidad de un consenso general [link](https://juanchiem.github.io/blog/dis_press.html)
+
+</div>
