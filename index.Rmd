@@ -30,10 +30,11 @@ La agronomía es mi gran hobbie y profesión. Mi interés general es la <br> epi
 
 ----
 
-### Notas de opinión personal sobre epidemiología y manejo de enfermedades de cultivos agrícolas
-
 <img src="images/ciclo.jpg" width="200" align="right"/>
 <div style="text-align: left">  
+
+### Notas de opinión personal sobre epidemiología y manejo de enfermedades de cultivos agrícolas
+
 **Junio 2020** 
 
 Fitopatometría y la necesidad de un consenso general [link](https://juanchiem.github.io/blog/dis_press.html)
