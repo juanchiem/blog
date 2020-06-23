@@ -1,15 +1,29 @@
 name: "juanchiem"
 navbar:
-  title: "Inicio"
+  left:
+    - icon: fa-home
+      href: index.html
   right:
     - text: "Cursos"
       href: cursos.html
+    - icon: ion-social-twitter
+      href: https://twitter.com/juanchiem      
+    - icon: ai-researchgate
+      href: https://www.researchgate.net/profile/Juan_Edwards_Molina3      
+    - icon: ai-google-scholar
+      href: https://scholar.google.com/citations?user=RhjNQIsAAAAJ&hl=en      
+    - icon: ai-orcid
+      href: http://orcid.org/0000-0002-3685-760X      
+    - icon: fa-github
+      href: https://github.com/juanchiem      
+      
 output_dir: "."
 output:
   html_document:
     theme: yeti
     highlight: textmate
     css: _site.css
-#    include:
-#      after_body: _footer.html
+#include:
+#    before_body: _navbar.html
+#    after_body: _footer.html
 
