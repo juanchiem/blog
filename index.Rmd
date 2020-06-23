@@ -16,7 +16,7 @@ https://everhartlab.github.io/IntroR/index.html
 ----
 
 
-<img src="images/juan.jpg" width="200" align="right"/>
+<img src="images/juan.png" width="200" align="left"/>
 
 <div style="text-align:left">  
 Ing. Agrónomo y M.Sc en Producción Vegetal (Univ. Nac. de Mar del Plata)
