@@ -21,7 +21,7 @@ https://everhartlab.github.io/IntroR/index.html
 <div style="text-align:left">  
 Ing. Agrónomo y M.Sc en Producción Vegetal (Univ. Nac. de Mar del Plata)
 <br> 
-Doctor en Fitopatología (Universidad de San Pablo - Brasil)
+Doctor en Fitopatología (Universidad de San Pablo / [ESALQ](http://www.lfn.esalq.usp.br/))
 <br> 
 
 La agronomía es mi gran hobbie y profesión. Mi interés general es la epidemiología de enfermedades de cultivos extensivos, con particular atención en la cuantificación de su impacto sobre el rendimiento. A través de un enfoque global del sistema productivo, pretendo desarrollar estrategias de manejo de enfermedades con el menor impacto en el medio ambiente 
