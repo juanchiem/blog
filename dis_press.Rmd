@@ -1,8 +1,8 @@
 ---
 title: "Fitopatometría y la necesidad de un consenso general"
 author: "Juan Edwards Molina"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
 ---
+<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, 
@@ -140,7 +140,7 @@ En Z37, podríamos considerar la incidencia en estrato superior (HB, HB-1 y HB-2
 
 ## Conclusión 
 
-**Nada** es absoluto en biología, pero cuanto mas nos pongamos de acuerdo, menor será el nivel de incertidumbre en nuestro día a día como cuantificadores de enfermedades. **Todo** lo escrito en este artículo es discutible y son bienvenidos los comentarios. Nótese que se discutió la cuantificación de enfermedades foliares en general. Otro articulo merecen las enfermedades sistémicas y el uso adecuado de las diferentes métricas de evaluación de enfermedades (índice de enfermedad, área abajo de la curva del progreso de la enfermedad, enfermedades que inducen defoliación, etc.) 
+**Nada** es absoluto en biología, pero cuanto más nos pongamos de acuerdo, menor será el nivel de incertidumbre en nuestro día a día como cuantificadores de enfermedades. **Todo** lo escrito en este artículo es discutible y son bienvenidos los comentarios. Nótese que se discutió la cuantificación de enfermedades foliares en general. Otro artículo merecen las enfermedades sistémicas y el uso adecuado de las diferentes métricas de evaluación de enfermedades (índice de enfermedad, área abajo de la curva del progreso de la enfermedad, enfermedades que inducen defoliación, etc.) 
 
 ---
 

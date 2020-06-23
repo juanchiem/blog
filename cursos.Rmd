@@ -1,7 +1,8 @@
 ---
 ---
-<br><br>
+<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
 
+<br>
 <br> 
 
 <img src="images/tidyverse.jpg" width="200" align="right"/>
