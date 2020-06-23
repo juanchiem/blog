@@ -24,6 +24,6 @@ output:
     highlight: textmate
     css: _site.css
 #include:
-#    before_body: _navbar.html
-#    after_body: _footer.html
+#    before_body: _header.html
+#   after_body: _footer.html
 
