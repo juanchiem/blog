@@ -3,17 +3,13 @@ navbar:
   left:
     - icon: fa-home
       href: index.html
+    - icon: fa-twitter
+      href: https://twitter.com/juanchiem      
+    - icon: fa-github
+      href: https://github.com/juanchiem      
   right:
     - text: "Cursos"
       href: cursos.html
-    - icon: ion-social-twitter
-      href: https://twitter.com/juanchiem      
-    - icon: ai-researchgate
-      href: https://www.researchgate.net/profile/Juan_Edwards_Molina3      
-    - icon: ai-google-scholar
-      href: https://scholar.google.com/citations?user=RhjNQIsAAAAJ&hl=en      
-    - icon: fa-github
-      href: https://github.com/juanchiem      
       
 output_dir: "."
 output:
@@ -22,6 +18,5 @@ output:
     highlight: textmate
     css: _site.css
 #include:
-#    before_body: _header.html
-#   after_body: _footer.html
+#    after_body: _footer.html
 

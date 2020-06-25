@@ -1,6 +1,6 @@
 ---
 title: "Web personal "
-author:  "Juan P. Edwards Molina / Investigador en [INTA Balcarce](https://inta.gob.ar/balcarce)"
+author: "Juan P. Edwards Molina / Investigador en [INTA Balcarce](https://inta.gob.ar/balcarce)"
 output:
   html_document:
     fig_width: 1
@@ -15,31 +15,35 @@ https://everhartlab.github.io/IntroR/index.html
 
 ----
 
-
 <img src="images/juan.png" width="200" align="left"/>
 
 <div style="text-align:left">  
 Ing. Agrónomo y M.Sc en Producción Vegetal (Univ. Nac. de Mar del Plata)
 <br> 
-Doctor en Fitopatología (Universidad de San Pablo / [ESALQ](http://www.lfn.esalq.usp.br/))
+PhD en Fitopatología (Universidad de San Pablo / [ESALQ](http://www.lfn.esalq.usp.br/))
 <br> 
 
 La agronomía es mi gran hobbie y profesión. Mi interés general es la epidemiología de enfermedades de cultivos extensivos, con particular atención en la cuantificación de su impacto sobre el rendimiento. A través de un enfoque global del sistema productivo, pretendo desarrollar estrategias de manejo de enfermedades con el menor impacto en el medio ambiente 
 
-<br> edwardsmolina@gmail.com
+[<i class="ai ai-researchgate-square ai-2x"></i>](https://www.researchgate.net/profile/Juan_Edwards_Molina3)
+[<i class="ai ai-google-scholar-square ai-2x"></i>](https://scholar.google.com/citations?user=RhjNQIsAAAAJ&hl=en)
 
 </div>
 
-----
+---- 
 
-
-<img src="images/ciclo.jpg" width="200" align="right"/>
-<div style="text-align: left">  
+<br> 
 
 ### Notas de opinión personal sobre epidemiología y manejo de enfermedades de cultivos agrícolas
+
+<img src="images/ciclo.jpg" width="150" align="right"/>
+
+<div style="text-align: left">  
 
 **Junio 2020** 
 
 Fitopatometría y la necesidad de un consenso general [link](https://juanchiem.github.io/blog/dis_press.html)
 
 </div>
+
+<p><a href="edwardsmolina@gmail.com"></a>.</p>
