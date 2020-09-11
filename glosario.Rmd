@@ -1,0 +1,99 @@
+---
+title: "Breve glosario epidemiológico"
+bibliography: citas.bib  
+csl: 3d-printed-materials-and-systems.csl
+---
+Elaborado por Juan P. Edwards Molina, Florencia Asinari, Juan Andrés Paredes, Joaquin Monguillot y Bruno Pugliese.
+
+Este breve glosario, inspirado en [@nutter1991disease], es de uso interno de los autores para estandarizar la terminología básica de nuestro trabajo cotidiano. Existen otras definiciones para estos mismos concetpos, sin embargo prefereimos la adopción de las definiciones de estos auotres citados oportunamente.  
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      message = FALSE,
+                      warning = FALSE, 
+                      fig.path = "dispress_figs")
+```
+
+--- 
+
+# Ciclo de patogénesis / Componentes del monociclo   
+
+1 - Sobrevivencia
+
+2 - Dispersión 
+
+3 - Infección 
+
+4 - Colonización
+
+5 - Reproducción
+
+* Latencia (período de) 
+
+* Incubación (período de) 
+
+* Enfermedad Monociclica 
+
+* Enfermedad Policiclica 
+
+* Virulencia 
+
+* Agresividad
+
+![](https://docs.google.com/drawings/d/e/2PACX-1vSCr1yDTtQ7sdQ3b7H6Vfqxxr4HAEMQfcd0OrbdipdUlFCBi_23gsJ8OXcmfAWAx5eHyew6vZeT4p7p/pub?w=581&h=496) 
+
+# Fitopatometría / Epidemiología
+
+* Incidencia: A nivel de población de hojas (nivel de cultivo) la **incidencia** es el porcentaje (o proporción) de hojas con al menos una lesión de un total "n" de hojas evaluadas 
+
+* Severidad: A nivel de órgano (hoja, fruto, inflorescencia, etc., para fines prácticos hablaremos de hojas en esta nota) la **severidad** es el _área de hoja ocupada por lesión de una enfermedad_. 
+
+A nivel de cultivo (o grupo de órganos) la *severidad* se obtiene de calcular el promedio de las severidades individuales de todas los órganos evaluados (incluyendo sanos), o sea una "severidad media general". 
+
+* Severidad en sentido estricto: severidad de sólo hojas enfermas (equivalente a *severidad condicional* [-@madden2007study])  
+
+* Intensidad: Es el producto de la incidencia por la severidad (abos expresados en proporción: de 0 a 1). Equivalente a *severidad en sentido amplio* (severidad de todas las hojas evaluadas)
+
+  (Más sobre discusión y cálculos de incidencia, severida e intensidad [aqui](https://juanchiem.github.io/blog/dis_press.html))
+
+* Índice de enfermedad
+
+* Área abajo de la curva (del progreso de la enfermedad): ABC (ABCPE).  
+
+* Prevalencia: 
+
+* Enfermedad endémica: 
+
+* Enfermedad poliética
+
+* Enfermedad ciclíca
+
+* Presión de enfermedad: 
+
+![](https://docs.google.com/drawings/d/e/2PACX-1vSCr1yDTtQ7sdQ3b7H6Vfqxxr4HAEMQfcd0OrbdipdUlFCBi_23gsJ8OXcmfAWAx5eHyew6vZeT4p7p/pub?w=581&h=496)
+
+## Escalas de evaluación
+
+**Precisión**: medida de la confiabilidad y / o repetibilidad de las evaluaciones de enfermedades (ver también exactitud, confiabilidad, repetibilidad)
+
+Confiabilidad: medida de la consistencia de las evaluaciones de la enfermedad entre evaluadores (intra-evaluador). Puede implicar la medida de la fiabilidad entre evaluadores a traves del tiempo (ver también repetibilidad).1
+
+Repetibilidad: medida de la consistencia de las evaluaciones de la enfermedad de las mismas unidades de muestreo por el mismo individuo repetidas en el tiempo; Medida de la confiabilidad intra-evaluador (ver también confiabilidad).1 
+
+Reproducibilidad: ver precisión.1
+
+Clase de enfermedad: categoría descriptiva de una escala de calificación que corresponde a un nivel (o intervalo) definido de enfermedad. 1
+
+Disease grade / Grado de enfermedad: descripción en palabras o números de la cantidad de enfermedad que afecta la calidad del rendimiento. 1
+
+## Estimación de daño
+
+Evaluación de la pérdida de cultivos: estimación cuantitativa de la proporción o cantidad real de pérdida de cultivos atribuible a uno o más patógenos (o plagas). 1
+Daño: cualquier reducción en la cantidad y / o calidad del rendimiento que resulta de la lesión. 1
+Función de daño: coeficiente de regresión que relaciona el nivel de intensidad de la enfermedad (X) con el rendimiento o la pérdida de rendimiento (Y) durante un período específico del desarrollo del cultivo. 1
+
+Tolerancia: capacidad del hospedante para reducir el efecto de la infección sobre su propio fitness independientemente del nivel de multiplicación del patógeno. [@raaberg2014live; @roy2000evolutionary] 
+
+# Referencias
+
+<div id="refs"></div>

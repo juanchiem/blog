@@ -13,3 +13,6 @@
 _Curso introductorio para uso de R en Agronomía y áreas afines _ </div>
 <br> 
 
+## [Ecofisiología práctica en R](https://juanchiem.github.io/ecofisio_2020/index.html)
+_Resolución de actividades prácticas del curso de ecofisiología de cultivos de FCA_Balcarce _ 
+
